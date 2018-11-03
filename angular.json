@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "my-angproj": {
+    "myproj-multidrop": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/my-angproj",
+            "outputPath": "dist/myproj-multidrop",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -50,18 +50,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "my-angproj:build"
+            "browserTarget": "myproj-multidrop:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "my-angproj:build:production"
+              "browserTarget": "myproj-multidrop:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "my-angproj:build"
+            "browserTarget": "myproj-multidrop:build"
           }
         },
         "test": {
@@ -95,7 +95,7 @@
         }
       }
     },
-    "my-angproj-e2e": {
+    "myproj-multidrop-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -103,11 +103,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "my-angproj:serve"
+            "devServerTarget": "myproj-multidrop:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "my-angproj:serve:production"
+              "devServerTarget": "myproj-multidrop:serve:production"
             }
           }
         },
@@ -123,5 +123,5 @@
       }
     }
   },
-  "defaultProject": "my-angproj"
+  "defaultProject": "myproj-multidrop"
 }
